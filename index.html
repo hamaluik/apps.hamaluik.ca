@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kenton Hamaluik's Apps</title>
+
+    <style>
+    @font-face {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/PublicSans-Regular.woff2) format("woff2"), url(/fonts/PublicSans-Regular.woff) format("woff"),
+      url(/fonts/PublicSans-Regular.ttf) format("ttf");
+    }
+    @font-face {
+      font-family: "Public Sans";
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/PublicSans-Italic.woff2) format("woff2"), url(/fonts/PublicSans-Italic.woff) format("woff"),
+      url(/fonts/PublicSans-Italic.ttf) format("ttf");
+    }
+    @font-face {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(/fonts/PublicSans-Bold.woff2) format("woff2"), url(/fonts/PublicSans-Bold.woff) format("woff"),
+      url(/fonts/PublicSans-Bold.ttf) format("ttf");
+    }
+
+    html, body, h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      font-family: "Public Sans", "Libre Franklin", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Helvetica", "Arial", "sans-serif";
+    }
+
+    section {
+      min-height: calc(100vh - 1.5rem);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article > * {
+      margin: 0.5rem;
+    }
+
+    article > * + * {
+      margin-top: 0;
+    }
+
+    a, a:hover, a:active, a:focus, a:visited {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    h1 {
+      display: flex;
+      align-items: baseline;
+      font-size: 48pt;
+    }
+
+    h1 img {
+      width: auto;
+      height: 0.75em;
+      margin-right: 0.1rem;
+    }
+
+    article > a {
+      max-width: 66%;
+    }
+
+    article picture {
+      margin: 0.25em auto;
+      max-width: 66%;
+    }
+
+    picture img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.87));
+    }
+
+    .timecop {
+      background: #212121;
+      color: rgb(245, 245, 245);
+    }
+
+    .timecop a, .timecop a:hover, .timecop a:active, .timecop a:focus, .timecop a:visited {
+      color: rgb(245, 245, 245);
+    }
+
+    .nomdebebe {
+      background: #ffca28;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    .nomdebebe a, .nomdebebe a:hover, .nomdebebe a:active, .nomdebebe a:focus, .nomdebebe a:visited {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    footer {
+      height: 1rem;
+      padding: 0.25rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    footer a, footer a:hover, footer a:active, footer a:focus, footer a:visited {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      article {
+        flex: none;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 36pt;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      article {
+        flex: 1;
+        width: auto;
+      }
+    }
+    </style>
+
+    <meta name="description" content="Apps created by Kenton Hamaluik">
+    <meta property="og:title" content="Kenton Hamaluik's Apps">
+    <meta property="og:description" content="Apps created by Kenton Hamaluik">
+    <!--<meta property="og:image" content="https://apps.hamaluik.ca/meta.jpg">-->
+    <!--<meta property="og:image:alt" content="Image description">-->
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://app.hamaluik.ca/">
+    <link rel="canonical" href="https://app.hamaluik.ca/">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#282a36">
+  </head>
+
+  <body>
+    <section>
+      <article class="timecop">
+        <h1><a href="https://timecop.app/"><img src="timecop/icon.svg" alt="Time Cop Logo"> Time Cop</a></h1>
+        <a href="https://timecop.app/">
+          <picture>
+            <source type="image/webp" srcset="timecop/timecop-screenshot-iphone-x-dark.webp">
+            <source type="image/png" srcset="timecop/timecop-screenshot-iphone-x-dark.png">
+            <img src="timecop/timecop-screenshot-iphone-x-dark.png" width="868" height="1743" alt="Screenshot of the Time Cop app">
+          </picture>
+        </a>
+      </article>
+      <article class="nomdebebe">
+        <h1><a href="https://nomdebebe.app"><img src="nomdebebe/icon.svg" alt="Nom de Bébé Logo"> Nom de Bébé</a></h1>
+        <a href="https://nomdebebe.app/">
+          <picture>
+            <source type="image/webp" srcset="nomdebebe/screenshot-iphone.webp">
+            <source type="image/png" srcset="nomdebebe/screenshot-iphone.png">
+            <img src="nomdebebe/screenshot-iphone.png" width="1325" height="2616" alt="Screenshot of the Nom de Bébé app">
+          </picture>
+        </a>
+      </article>
+    </section>
+    <footer>
+      <p>© 2021 <a href="https://hamaluik.ca/">Kenton Hamaluik</a></p>
+    </footer>
+  </body>
+</html>
